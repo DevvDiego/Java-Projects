@@ -8,6 +8,11 @@ public class Portero extends Jugador {
         this.golesRecibidos = golesRecibidos;
     }
 
+    void printAll(){
+        System.out.println(this.nombre + ", " + this.apellido + ", " + this.edad + ", " + this.get_esTitular()
+        + ", " + this.get_golesRecibidos());
+    }
+
     int get_golesRecibidos(){
         return this.golesRecibidos;
     }

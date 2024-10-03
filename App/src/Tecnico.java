@@ -14,6 +14,12 @@ public class Tecnico extends Jugador {
         this.esExtranjero = esExtranjero;
     }
 
+    void printAll(){
+        System.out.println(this.nombre + ", " + this.apellido + ", " + this.edad + ", " + this.get_esTitular()
+        + ", " + this.get_añosExperiencia() + ", " + this.get_esExtranjero());
+    }
+
+
     int get_añosExperiencia(){
         return this.añosExperiencia;
     }

@@ -1,5 +1,3 @@
-import javax.sound.sampled.Port;
-
 public class Equipo {
 /*
  * Se requiere desarrollar un programa que modele la conformación 
@@ -58,8 +56,8 @@ public class Equipo {
     void printAll(){
         System.out.println(nombre);
         System.out.println(pais);
-        System.out.println(tecnico);
-        System.out.println(portero);
+        tecnico.printAll();
+        portero.printAll();
 
         System.out.println("\n");
 
@@ -71,14 +69,14 @@ public class Equipo {
 
 
         for (MedioCampo medioCampo : medioCampos) {
-            System.out.println(medioCampo);
+            medioCampo.printAll();
         }
         System.out.println("\n");
 
 
 
         for (Delantero delantero : delanteros) {
-            System.out.println(delantero);
+            delantero.printAll();
         }
         System.out.println("\n");
 
